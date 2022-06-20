@@ -1,8 +1,7 @@
 
-import { useState } from 'react';
 import { SafeAreaView, StyleSheet } from 'react-native';
-import SettingsScreen from './components/SettingsScreen/SettingsScreen';
 import AppContextProvider from './AppContextProvider';
+import SettingsScreen from './components/SettingsScreen/SettingsScreen';
 
 export type PlayerType = {
   id: number,
