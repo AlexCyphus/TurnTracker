@@ -1,6 +1,7 @@
 
 import { SafeAreaView, StyleSheet, Text } from 'react-native';
-import AppContextProvider from './AppContextProvider';
+import AppContextProvider, { useAppContext } from './AppContextProvider';
+import Routes from './components/PlayScreen/Routes';
 import SettingsScreen from './components/SettingsScreen/SettingsScreen';
 
 export type PlayerType = {
@@ -8,13 +9,15 @@ export type PlayerType = {
   name: string
 }
 
-const App = () => (
-  <AppContextProvider>
-    <SafeAreaView style={{ flex: 1 }}>
-      <SettingsScreen />
-    </SafeAreaView >
-  </AppContextProvider>
-)
+const App = () => {
+  return (
+    <AppContextProvider>
+      <SafeAreaView style={{ flex: 1 }}>
+        <Routes />
+      </SafeAreaView >
+    </AppContextProvider>
+  )
+}
 
 const styles = StyleSheet.create({
   container: {
