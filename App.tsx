@@ -1,5 +1,5 @@
 
-import { SafeAreaView, StyleSheet } from 'react-native';
+import { SafeAreaView, StyleSheet, Text } from 'react-native';
 import AppContextProvider from './AppContextProvider';
 import SettingsScreen from './components/SettingsScreen/SettingsScreen';
 

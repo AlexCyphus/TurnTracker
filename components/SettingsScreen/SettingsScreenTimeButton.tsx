@@ -2,16 +2,13 @@
 import { StyleProp, Text, TouchableHighlight, ViewStyle } from 'react-native';
 
 const SettingsScreenTimeButtonStyles: StyleProp<ViewStyle> = {
-  width: 60,
-  height: 60,
+  maxWidth: 60,
+  maxHeight: 60,
   flex: 1,
   justifyContent: "center",
   alignItems: "center",
-  position: "absolute",
-  left: 20,
-  bottom: 20,
   borderColor: "black",
-  backgroundColor: "white",
+  backgroundColor: "pink",
   borderRadius: 400
 }
 
